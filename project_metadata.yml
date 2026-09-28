@@ -1,72 +1,127 @@
-# ============================================================
-# project_metadata.yml
-# PURPOSE: Machine-readable project metadata only.
-# This file contains NO narrative, NO insights, NO analysis.
-# It exists for indexing, automation, and portfolio cataloging.
-# ============================================================
-
 project:
-  name: "[Project Title]"
-  slug: "[project-title-lowercase-hyphenated]"   # Used for folder names, URLs
+  name: "Olist E-Commerce Data Analysis Dashboard"
+  slug: "olist-ecommerce-data-analysis"
   version: "1.0.0"
-  status: "completed"                             # Options: in-progress | completed | archived
-  last_updated: "YYYY-MM-DD"
+  status: "completed"
+  last_updated: "2026-09-28"
 
 author:
-  name: "[Your Full Name]"
-  role: "[Your Role or Title]"
-  github: "[github_username]"
-  linkedin: "[linkedin_profile_url]"
-  email: "[optional]"
+  name: "Hazem Waleed"
+  role: "Data Analyst"
+  github: "HazemWaleed517"
+  linkedin: "https://www.linkedin.com/in/7azem-waleed-ai/?isSelfProfile=true"
 
 project_type:
-  primary: "[e.g., exploratory-analysis]"        # See taxonomy below
+  primary: "end-to-end"
   secondary:
-    - "[e.g., dashboard]"
-    - "[e.g., data-pipeline]"
+    - "data-cleaning"
+    - "dashboard"
+    - "exploratory-analysis"
+    - "reporting"
 
-# PROJECT TYPE TAXONOMY (pick what applies):
-# exploratory-analysis | sql-analysis | dashboard | data-pipeline
-# predictive-model | data-cleaning | reporting | visualization
-# end-to-end | automation | other
-
-domain: "[e.g., finance / healthcare / marketing / operations / education / other]"
+domain: "e-commerce / retail / operations"
 
 tools:
-  languages:
-    - "[e.g., Python 3.11]"
-    - "[e.g., SQL]"
-  libraries:
-    - "[e.g., pandas 2.0]"
-    - "[e.g., matplotlib 3.7]"
   platforms:
-    - "[e.g., GitHub]"
-    - "[e.g., Google Colab]"
+    - "Microsoft Excel"
+    - "GitHub"
+
   visualization:
-    - "[e.g., Power BI]"
-    - "[e.g., Tableau]"
-    - "[e.g., Plotly]"
+    - "Excel Pivot Charts"
+    - "Excel Dashboards"
+
+  data_processing:
+    - "Power Query"
+    - "Excel Data Model"
+    - "Pivot Tables"
+    - "Power pivot"
+    - "DAX"
 
 data:
   sources:
-    - name: "[Source name]"
-      type: "[csv / api / database / web-scrape / manual / public-dataset]"
-      access: "[public / private / simulated / anonymized]"
-  row_count_approx: "[e.g., 50000]"
-  date_range:
-    start: "YYYY-MM-DD"
-    end: "YYYY-MM-DD"
+    - name: "Brazilian E-Commerce Public Dataset by Olist"
+      type: "public-dataset"
+      access: "public"
+      row_count_approx: "Multiple related tables; ~1M+ records across the full dataset"
+      date_range:
+        start: "2016-09-04"
+        end: "2018-10-17"
+
+  tables:
+    - "olist_orders_dataset"
+    - "olist_order_items_dataset"
+    - "olist_order_payments_dataset"
+    - "olist_order_reviews_dataset"
+    - "olist_customers_dataset"
+    - "olist_products_dataset"
+    - "olist_sellers_dataset"
+    - "olist_geolocation_dataset"
+    - "product_category_name_translation"
 
 outputs:
-  - type: "[notebook / dashboard / report / csv / script / slides]"
-    path: "[relative/path/to/output]"
-    description: "[One-line description]"
+  - type: "excel-workbook"
+    path: "Olist(1).xlsx"
+    description: "Cleaned Olist dataset, data model, pivot tables, KPIs, and interactive dashboards."
+
+  - type: "report"
+    path: "Olist_Project_Documentation.docx"
+    description: "Project documentation covering data cleaning, data modeling, calculations, analysis, findings, and recommendations."
+
+  - type: "slides"
+    path: "Olist_Project_Presentation_AR.pptx"
+    description: "Arabic presentation summarizing the project, KPIs, findings, business problems, and recommendations."
+
+analysis_areas:
+  - "Sales Performance"
+  - "Order Status"
+  - "Delivery Performance"
+  - "Customer Analysis"
+  - "Product Performance"
+  - "Seller Performance"
+  - "Payment Analysis"
+  - "Review & Customer Satisfaction"
+  - "Geographic Analysis"
+
+key_kpis:
+  - "Total Sales"
+  - "Total Orders"
+  - "Delivered Orders"
+  - "Delivery Rate"
+  - "On-Time Orders"
+  - "On-Time Rate"
+  - "Average Delivery Days"
+  - "Average Review Score"
+  - "Positive Review Rate"
+
+dashboards:
+  - "DB_Home"
+  - "DB_Orders"
+  - "DB_Sales"
+  - "DB_Customers"
+  - "DB_Products"
+  - "DB_Sellers"
+  - "DB_Payments"
+  - "DB_Reviews"
+  - "DB_Delivery"
+  - "DB_Geography"
 
 dependencies:
-  file: "[requirements.txt / environment.yml / packages.R / none]"
-  notes: "[Any setup instructions or environment caveats]"
+  file: "none"
+  notes: >
+    The project was developed in Microsoft Excel using Power Query,
+    Pivot Tables, Excel Data Model, calculated columns/measures,
+    slicers, and interactive dashboards.
+    The workbook may require updating Power Query source paths
+    if the original raw CSV files are moved to another location.
 
 tags:
-  - "[keyword-1]"
-  - "[keyword-2]"
-  - "[keyword-3]"
+  - "olist"
+  - "e-commerce"
+  - "data-analysis"
+  - "excel"
+  - "power-query"
+  - "data-cleaning"
+  - "dashboard"
+  - "business-intelligence"
+  - "data-visualization"
+  - "retail-analytics"
